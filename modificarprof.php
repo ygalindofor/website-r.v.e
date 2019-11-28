@@ -38,19 +38,26 @@
             <div class="card card-3">
                 <div class="card-heading" style="background-image: url(img/niñarve.jpg);"></div>
                 <div class="card-body">
-                    <h2 class="title">Eliminar Registros</h2>
-										<form class="contacto" action="eliminar.php" method="POST">
-											<div class="input-group">
-											<div><input  class="input--style-3" id="cedula"class="codigo" type="number" name="txtcodigo1" placeholder="Ingresar Cedula" maxlength="10" >
-											</div>
-										</div>
-											<div><input class="btn btn--pill btn--green" type="submit" value="Eliminar Registro" name="btnEliminar"></div>
-										</form> <br> <br>
-										<h2 class="title">Ver registros</h2>
-										<form class="contacto" action="verprof.php" method="POST">
-											<div><input class="btn btn--pill btn--green" type="submit" value="Ver Registros" name="btnVer"></div>
-										</form> <br>
-										<form class="contacto" action="consultar.html" method="POST">
+                    <h2 class="title">Actualizar Registros</h2>
+							<form class="contacto" action="actualizar.php" method="POST">
+                                <div class="input-group">
+                            <div><input class="input--style-3" type="number" name="txtcodigo" placeholder="Ingresar Cedula" maxlength="10" required autofocus></div></div>
+                            <div class="input-group">
+                            <div><input class="input--style-3" type="text" name="txtnombre" placeholder="Ingresar Nombre"  ></div></div>
+                            <div class="input-group">
+                            <div><input class="input--style-3" type="email" name="txtemail" placeholder="Ingresar email @"  ></div></div>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                                <select name="cmbinstitucion">
+                                                    <option value="001">INSTITUCIÓN EDUCATIVA LAS VILLAS</option>
+                                                    <option value="002">INSTITUCIÓN EDUCATIVA LEÓN XIII</option>
+                                                    <option value="003">INSTITUCIÓN EDUCATIVA SAN MATEO</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                            </br>
+                            <div><input class="btn btn--pill btn--green"type="submit" value="Actualizar Registros" name="btnActualizar"></div> <br>
+                            </form>
+										<form class="contacto" action="index2.html" method="POST">
 											<div><input class="btn btn--pill btn--green" type="submit" value="Volver Principal"></div>
 										</form>
                 </div>

@@ -59,7 +59,7 @@
 										<div class="text-danger" id="msg-email">Ingrese el email <br></div>
 										<div class="text-danger" id="msg-email2">ejemplo ashd@dfg.xy</div><br>
 											<div class="rs-select2 js-select-simple select--no-search">
-												<select name="cmbinstitucion">
+												<select name="cmbinstitucion" id="cod_inst">
 													<option value="001">INSTITUCIÓN EDUCATIVA LAS VILLAS</option>
 													<option value="002">INSTITUCIÓN EDUCATIVA LEÓN XIII</option>
 													<option value="003">INSTITUCIÓN EDUCATIVA SAN MATEO</option>
@@ -73,7 +73,7 @@
 											<div class="text-danger" id="msg-pass">Ingrese la contraseña <br></div><br>
 											<div><input class="btn btn--pill btn--green" type="submit" value="Registrar" name="btnRegistrar"></div><br>
 										</form>
-										<form class="contacto" action="index.html" method="POST">
+										<form class="contacto" action="index2.html" method="POST">
 											<div><input class="btn btn--pill btn--green" type="submit" value="Volver Principal"></div>
 										</form>
                 </div>

@@ -3,21 +3,22 @@
 $server="localhost";
 $usuario="root";
 $contraseña="";
-$bd="ejemplo";
+$bd="proyecto";
 
 $conexion=mysqli_connect($server,$usuario,$contraseña,$bd)
 or die ("Error de la conexion");
 
 $codigo=$_POST['txtcodigo'];
 $nombre=$_POST['txtnombre'];
-$edad=$_POST['txtedad'];
+$email=$_POST['txtemail'];
+$inst=$_POST['cmbinstitucion'];
 
 
-mysqli_query($conexion,"UPDATE datos set nombre='$nombre',edad='$edad'where codigo='$codigo'")
+mysqli_query($conexion,"UPDATE profesor set nom_prof='$nombre',email_prof='$email', cod_inst='$inst' where cod_prof='$codigo'")
 or die ("Error al Actualizar");
 
 mysqli_close($conexion);
-require("index1.php");
+require("modificarprof.php");
 
 
 ?>
